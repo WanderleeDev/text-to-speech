@@ -1,5 +1,6 @@
-import ControlsBox from './ControlsBox/ControlsBox'
+// import ControlsBox from './ControlsBox/ControlsBox'
 import TextBox from './TextBox/TextBox'
+import ContainerControls from './ControlsBox/ContainerControls'
 
 const App = (): string => {
   return (`
@@ -11,7 +12,7 @@ const App = (): string => {
         </span> 
       </h1>
       ${TextBox()}
-      ${ControlsBox()}
+      ${ContainerControls()}
     </main>
   `).trim()
 }

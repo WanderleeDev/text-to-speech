@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  option {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}

@@ -5,12 +5,10 @@ import Speaker from './class/speecher'
 
 const renderHtml = new Render('#app')
 renderHtml.renderContent(App(), 'beforeend')
+const speaker = new Speaker('#textBox')
 
 document.addEventListener('DOMContentLoaded', () => {
-  const speaker = new Speaker('#textBox')
-  const triggerSpeaker = speaker.btnSpeak
-  console.log(triggerSpeaker)
-  triggerSpeaker.onclick = function () {
+  speaker.btnSpeak.onclick = function () {
     speaker.speak()
   }
 })
