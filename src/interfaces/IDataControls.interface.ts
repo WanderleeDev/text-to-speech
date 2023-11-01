@@ -1,6 +1,7 @@
 import { type ILanguage } from './ILanguage'
 
 export interface IDataControls {
+  group: string
   configButton: IButtonData
   configSelect: ISelectData
   optionsSelect?: ILanguage[]

@@ -2,7 +2,8 @@ import { type IDataControls } from '../../interfaces/IDataControls.interface'
 
 const ControlsBox = (data: IDataControls): string => {
   return (`
-  <div class="w-full relative grid sm:grid-cols-[1fr_auto] gap-8">
+  <div class="w-full relative grid sm:grid-cols-[1fr_auto] gap-8 row-start-1 col-start-1" 
+    id="${data.group}">
     <div class="rounded-3xl bg-white/20 pr-3">
       <label class="text-xs absolute -top-5 left-4 font-medium tracking-wider"
       for="${data.configSelect.idTag}">

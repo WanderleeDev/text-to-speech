@@ -41,8 +41,7 @@ class Speaker extends ElementLocator {
   private initializeSelector (): void {
     if (this.listVoices.length !== 0) {
       //  Ponemos por defecto el primer tipo de voz a usar al objeto speech (opcional ya que el browser pondrá una por defecto)
-      this.speech.voice = this.listVoices[0]
-
+      // *opcional* this.speech.voice = this.listVoices[0]
       //  Recorre la lista y por cada una crea un tag <option> que representa cada opción de la lista y esta siendo agregado a un tag <select>
       this.listVoices.forEach((voice, i) => {
         const option = new Option(voice.name, voice.name)
@@ -52,7 +51,7 @@ class Speaker extends ElementLocator {
       this.changeVoiceModel()
     } else {
       //  Solo crea y agrega un tag de <option> con el mensaje de error
-      this.voiceSelector.options[0] = new Option('El navegador no cuenta con modelos de voz')
+      this.voiceSelector.options[0] = new Option('The browser does not have voice models')
     }
   }
 }

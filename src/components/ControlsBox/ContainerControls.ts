@@ -5,6 +5,7 @@ import languages from '../../language/languages'
 const ContainerControls = (): string => {
   const contentControls: IDataControls[] = [
     {
+      group: 'ctrlPanel-voice',
       configSelect: {
         idTag: 'voice-selector',
         attrName: 'Voice selector'
@@ -16,6 +17,7 @@ const ContainerControls = (): string => {
       }
     },
     {
+      group: 'ctrlPanel-language',
       configSelect: {
         idTag: 'language-selector',
         attrName: 'Language selector'

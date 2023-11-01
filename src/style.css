@@ -7,3 +7,10 @@
     background-color: rgba(0, 0, 0, 0.7);
   }
 }
+@layer utilities {
+  .animate-scale {
+    transform: scale(0);
+    pointer-events: none;
+    user-select: none;
+  }
+}
