@@ -11,6 +11,9 @@ export default {
       },
       width: {
         'container-resp': 'min(100%, 40rem)'
+      },
+      backgroundImage: {
+        'bars': "url('./src/img/bars.svg')"
       }
     },
   },

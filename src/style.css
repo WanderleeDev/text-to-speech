@@ -13,4 +13,33 @@
     pointer-events: none;
     user-select: none;
   }
+
+  .bars-active {
+    @apply
+    bg-bars
+    bg-center
+    bg-no-repeat
+    pointer-events-none
+    select-none
+    placeholder:select-none
+    placeholder:text-transparent
+    selection:bg-transparent
+  }
+
+  .disabled-btn {
+    @apply
+    bg-gray-500
+    cursor-not-allowed
+    before:h-2
+    before:w-full
+    before:left-0
+    before:-bottom-5
+    before:content-['listening_...']
+    before:absolute
+    before:text-xs
+    before:tracking-wider
+    before:font-black
+    before:opacity-0
+    before:transition-opacity
+  }
 }

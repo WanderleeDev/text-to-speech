@@ -17,7 +17,6 @@ const Footer = (): string => {
       href: tailwindLogo
     }
   ]
-  console.log(listIcons)
 
   return (`
   <footer class="flex flex-col gap-4 items-center justify-center self-end pb-8">

@@ -1,4 +1,5 @@
 import Microphone from '../MicrophoneBtn/Microphone'
+//  import bars from '../../img/bars.svg'
 
 const TextBox = (): string => {
   return (`
@@ -8,6 +9,7 @@ const TextBox = (): string => {
       id="textBox"
       aria-label="write your text that you want to be read"
       placeholder="Write your text ...">
+        
       </textarea>
       ${Microphone()}
     </div>
