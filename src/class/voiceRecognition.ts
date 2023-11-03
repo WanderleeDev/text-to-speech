@@ -9,10 +9,13 @@ class VoiceRecognition extends ElementLocator {
   recognition = new webkitSpeechRecognition()
   btnListen!: HTMLButtonElement
   changeBtn!: HTMLButtonElement
+  languageSelect!: HTMLSelectElement
 
   //  función destinada a un eventListener agrega estilos, deshabilita tags limpia el textBox para iniciar el reconocimiento
   recognitionHandle = (target: HTMLTextAreaElement): void => {
     this.recognition.start()
+    console.log(this.recognition.lang = this.languageSelect.value)
+    this.recognition.lang = this.languageSelect.value
     this.btnListen.disabled = true
     this.btnListen.classList.add('disabled-btn')
     this.btnListen.classList.add('active:scale-100')
@@ -38,6 +41,7 @@ class VoiceRecognition extends ElementLocator {
     this.recognition.interimResults = false
     this.btnListen = this.getChildReference('#btn-listen') as HTMLButtonElement
     this.changeBtn = this.getChildReference('#changeControlBtn') as HTMLButtonElement
+    this.languageSelect = this.getChildReference('#language-selector') as HTMLSelectElement
 
     //  evento disparado cuando se inicia el reconocimiento de voz
     this.recognition.onstart = () => {
