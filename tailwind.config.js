@@ -13,7 +13,7 @@ export default {
         'container-resp': 'min(100%, 40rem)'
       },
       backgroundImage: {
-        'bars': "url('./src/img/bars.svg')"
+        'bars': "url('/src/img/bars.svg')"
       }
     },
   },
