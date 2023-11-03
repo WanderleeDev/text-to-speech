@@ -11,11 +11,10 @@ class VoiceRecognition extends ElementLocator {
   changeBtn!: HTMLButtonElement
   languageSelect!: HTMLSelectElement
 
-  //  función destinada a un eventListener agrega estilos, deshabilita tags limpia el textBox para iniciar el reconocimiento
+  //  función destinada a un eventListener agrega estilos, deshabilita tags limpia el textBox para iniciar el reconocimiento y agrega el lenguage a escuchar
   recognitionHandle = (target: HTMLTextAreaElement): void => {
-    this.recognition.start()
-    console.log(this.recognition.lang = this.languageSelect.value)
     this.recognition.lang = this.languageSelect.value
+    this.recognition.start()
     this.btnListen.disabled = true
     this.btnListen.classList.add('disabled-btn')
     this.btnListen.classList.add('active:scale-100')
