@@ -20,7 +20,7 @@ const Footer = (): string => {
 
   return (`
   <footer class="flex flex-col gap-4 items-center justify-center self-end pb-8">
-    <div class="text-gray-200 text-xs flex justify-center flex-col items-center">
+    <div class="text-gray-200 text-xs flex justify-center gap-1 items-center">
       <p>
       developed by 
       <a class="text-white rounded-md font-medium underline text-sm"
