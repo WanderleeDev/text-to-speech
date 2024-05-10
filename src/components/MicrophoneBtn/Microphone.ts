@@ -11,5 +11,5 @@ const Microphone = (): string => {
   </button>
   `)
 }
-//  bg-gray-700 animate-pulse
+
 export default Microphone
