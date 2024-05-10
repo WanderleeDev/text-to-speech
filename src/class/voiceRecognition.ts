@@ -137,7 +137,6 @@ class VoiceRecognition extends ElementLocator {
     this.changeBtn.addEventListener('click', (): void => {
       this.cleanTextBoxStyles(textArea)
       this.btnListen.removeEventListener('click', () => this.recognitionHandle)
-      console.log('disabled')
     })
   }
 

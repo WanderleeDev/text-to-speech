@@ -1,6 +1,6 @@
 const Microphone = (): string => {
   return (`
-  <button class="absolute bottom-12 right-2 bg-second-red/60 p-3 rounded-[50%] hover:scale-95 active:scale-105 hover:animate-pulse transition-transform"
+  <button class="absolute bottom-12 right-2 bg-second-red/60 p-3 rounded-[50%] hover:scale-95 active:scale-105 hover:animate-pulse transition-transform hover:rotate-180"
     type="button"
     id="changeControlBtn"
     aria-label="change control panel"
